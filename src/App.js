@@ -1,5 +1,5 @@
 import styled from "styled-components/macro";
-import { Feature, Header, Navbar } from "./components";
+import { Feature, Header, Navbar, Offer } from "./components";
 
 const App = () => {
   return (
@@ -7,6 +7,7 @@ const App = () => {
       <Navbar />
       <Header />
       <Feature />
+      <Offer />
     </Application>
   );
 };
