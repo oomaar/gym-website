@@ -11,6 +11,10 @@ export const Nav = styled.nav`
 	z-index: 1;
     background-color: transparent;
     transition: 0.6s ease-in-out;
+
+    img {
+        width: 90px;
+    }
     
     &.active{
         box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.157);
