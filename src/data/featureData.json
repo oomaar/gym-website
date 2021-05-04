@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "image": "/images/1.svg",
+        "title": "Weight Lifting",
+        "text": "No Pain No GAIN."
+    },
+    {
+        "id": 2,
+        "image": "/images/2.svg",
+        "title": "Specific Muscle",
+        "text": "Shoot for your goal and we will help you."
+    },
+    {
+        "id": 3,
+        "image": "/images/3.svg",
+        "title": "Flex Your Muscle",
+        "text": "Never Give up, Plan B is for Losers."
+    },
+    {
+        "id": 4,
+        "image": "/images/4.svg",
+        "title": "Cardio Exercise",
+        "text": "Cardio is for everbody, not just for losing fat."
+    }
+]
