@@ -1,9 +1,15 @@
+import styled from "styled-components/macro";
+import { Header, Navbar } from "./components";
+
 const App = () => {
   return (
-    <div>
-      Application For The Gym 
-    </div>
+    <Application>
+      <Navbar />
+      <Header />
+    </Application>
   );
 };
 
 export default App;
+
+const Application = styled.div``;
