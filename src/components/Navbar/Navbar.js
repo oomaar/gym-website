@@ -17,7 +17,7 @@ const Navbar = () => {
 
     return (
         <Nav className={nav && "active"}>
-            <Link to="#" className="logo">
+            <Link to="main" className="logo" smooth={true} duration={300}>
                 <img src="/images/logo.png" alt="Logo" />
             </Link>
             <MenuBtn id="menu-btn" className="menu-btn" type="checkbox" />
@@ -26,19 +26,19 @@ const Navbar = () => {
             </MenuIcon>
             <Menu>
                 <MenuItem>
-                    <Link to="#">Header</Link>
+                    <Link to="main" smooth={true} duration={200}>Header</Link>
                 </MenuItem>
                 <MenuItem>
-                    <Link to="#">Features</Link>
+                    <Link to="features" smooth={true} duration={200}>Features</Link>
                 </MenuItem>
                 <MenuItem>
-                    <Link to="#">Offer</Link>
+                    <Link to="offer" smooth={true} duration={200}>Offer</Link>
                 </MenuItem>
                 <MenuItem>
-                    <Link to="#">About</Link>
+                    <Link to="about" smooth={true} duration={200}>About</Link>
                 </MenuItem>
                 <MenuItem>
-                    <Link to="#">Contact</Link>
+                    <Link to="contact" smooth={true} duration={200}>Contact</Link>
                 </MenuItem>
             </Menu>
         </Nav>
