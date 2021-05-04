@@ -56,7 +56,7 @@ export const Heading = styled.div`
     justify-content: center;
     align-items: center;
 
-    h2{
+    h2 {
         font-family: 'Lato';
         font-size: 2.7rem;
         margin: 0px;
@@ -68,7 +68,7 @@ export const Heading = styled.div`
         }
     }
 
-    h1{
+    h1 {
         font-family: 'Lato';
         font-size: 5rem;
         margin: 0px;
@@ -137,7 +137,6 @@ export const HeaderBtn = styled.a`
     }
 
     @media (max-width: 970px) {
-        margin-left: 20%;
         margin-top: 20px;
     }
 `;
