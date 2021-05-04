@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { Link } from "react-scroll";
-import Logo from "../../images/logo.png";
 
 import {
     Nav,
@@ -27,7 +26,7 @@ const Navbar = () => {
     return (
         <Nav className={nav && "active"}>
             <Link to="#" className="logo">
-                <img src={Logo} alt="Logo" />
+                <img src="/images/logo.png" alt="Logo" />
             </Link>
             <MenuBtn id="menu-btn" className="menu-btn" type="checkbox" />
             <MenuIcon htmlFor="menu-btn" for="menu-btn" className="menu-icon">
