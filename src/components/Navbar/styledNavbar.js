@@ -7,7 +7,7 @@ export const Nav = styled.nav`
 	position: fixed;
 	left: 0;
 	top: 0;
-	width:100%;
+	width: 100%;
 	z-index: 1;
     background-color: transparent;
     transition: 0.6s ease-in-out;
@@ -18,10 +18,10 @@ export const Nav = styled.nav`
     
     &.active{
         box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.157);
-        background-color: #000000;
+        background-color: #000;
     }
 
-    @media(max-width:1100px) {
+    @media(max-width: 1100px) {
         justify-content: space-between;
         height: 65px;
         padding: 0px 30px;
@@ -49,16 +49,16 @@ export const Nav = styled.nav`
 export const Menu = styled.ul`
     display: flex;
 
-    @media(max-width:1100px) {
-        display:none;
-        position:absolute;
-        top:65px;
-        left:0px;
-        background-color:#000000;
-        border-bottom:4px solid #FF1414;
-        width:100%;
-        padding:0px;
-        margin:0px;
+    @media(max-width: 1100px) {
+        display: none;
+        position: absolute;
+        top: 65px;
+        left: 0px;
+        background-color: #000;
+        border-bottom: 4px solid #FF1414;
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
     }
 `;
 
@@ -69,7 +69,7 @@ export const MenuItem = styled.li`
 
     a {
         font-family: 'Lato';
-        height:40px;
+        height: 40px;
         line-height: 43px;
         margin: 3px;
         padding: 0px 22px;
@@ -84,54 +84,54 @@ export const MenuItem = styled.li`
 
         :hover{
             background-color: #FF1414;
-            color:#ffffff;
+            color: #fff;
             box-shadow: 5px 10px 30px rgba(255, 2, 2, 0.336);
             transition: all ease 0.2s;
         }
 
-        @media(max-width:1100px) {
-            width:100%;
-            height:40px;
+        @media(max-width: 1100px) {
+            width: 100%;
+            height: 40px;
             justify-content: center;
             align-items: center;
-            margin:0px;
+            margin: 0px;
             padding: 25px;
-            border:1px solid rgba(38,38,38,0.03);
+            border: 1px solid rgba(38,38,38,0.03);
         }
     }
 `;
 
 export const MenuIcon = styled.label`
-    display:none;
+    display: none;
 
-    @media(max-width:1100px) {
-        display:block;
-        cursor:pointer;
-        float:right;
-        padding:28px 20px;
-        position:relative;
+    @media(max-width: 1100px) {
+        display: block;
+        cursor: pointer;
+        float: right;
+        padding: 28px 20px;
+        position: relative;
         user-select: none;
     }
 `;
 
 export const NavIcon = styled.span`
-    @media(max-width:1100px) {
-        background-color:#ffffff;
-        display:block;
-        height:2px;
-        position:relative;
+    @media(max-width: 1100px) {
+        background-color: #fff;
+        display: block;
+        height: 2px;
+        position: relative;
         transition: background 0.2s ease-out;
-        width:24px;
+        width: 24px;
 
         ::before,
         ::after {
-            background:rgb(255, 255, 255);
-            content:'';
-            display:block;
-            height:100%;
-            position:absolute;
-            transition:all ease-out 0.2s;
-            width:100%;
+            background: rgb(255, 255, 255);
+            content: '';
+            display: block;
+            height: 100%;
+            position: absolute;
+            transition: all ease-out 0.2s;
+            width: 100%;
         }
 
         ::before {
@@ -145,9 +145,9 @@ export const NavIcon = styled.span`
 `;
 
 export const MenuBtn = styled.input`
-    display:none;
+    display: none;
 
-    @media(max-width:1100px) {
+    @media(max-width: 1100px) {
         display: none;
 
         :checked ~ ${Menu} {
@@ -160,12 +160,12 @@ export const MenuBtn = styled.input`
 
         :checked ~ ${MenuIcon} ${NavIcon}::before {
             transform: rotate(-45deg);
-            top:0;
+            top: 0;
         }
 
         :checked ~ ${MenuIcon} ${NavIcon}::after {
             transform: rotate(45deg);
-            top:0;
+            top: 0;
         }
     }
 `;
