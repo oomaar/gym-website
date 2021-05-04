@@ -2,6 +2,15 @@ import { useState } from 'react';
 import { Link } from "react-scroll";
 import Logo from "../../images/logo.png";
 
+import {
+    Nav,
+    Menu,
+    MenuItem,
+    MenuBtn,
+    MenuIcon,
+    NavIcon,
+} from "./styledNavbar";
+
 const Navbar = () => {
     const [nav, setNav] = useState(false);
 
@@ -16,32 +25,32 @@ const Navbar = () => {
     window.addEventListener('scroll', changeBackground);
 
     return (
-        <nav className={nav ? "nav active" : "nav"}>
+        <Nav className={nav && "active"}>
             <Link to="#" className="logo">
                 <img src={Logo} alt="Logo" />
             </Link>
-            <input id="menu-btn" className="menu-btn" type="checkbox"/>
-            <label htmlFor="menu-btn" for="menu-btn" className="menu-icon">
-                <span className="nav-icon"></span>
-            </label>
-            <ul className="menu">
-                <li>
+            <MenuBtn id="menu-btn" className="menu-btn" type="checkbox" />
+            <MenuIcon htmlFor="menu-btn" for="menu-btn" className="menu-icon">
+                <NavIcon className="nav-icon"></NavIcon>
+            </MenuIcon>
+            <Menu>
+                <MenuItem>
                     <Link to="#">Header</Link>
-                </li>
-                <li>
+                </MenuItem>
+                <MenuItem>
                     <Link to="#">Features</Link>
-                </li>
-                <li>
+                </MenuItem>
+                <MenuItem>
                     <Link to="#">Offer</Link>
-                </li>
-                <li>
+                </MenuItem>
+                <MenuItem>
                     <Link to="#">About</Link>
-                </li>
-                <li>
+                </MenuItem>
+                <MenuItem>
                     <Link to="#">Contact</Link>
-                </li>
-            </ul>
-        </nav>
+                </MenuItem>
+            </Menu>
+        </Nav>
     );
 };
 
