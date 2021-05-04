@@ -12,15 +12,7 @@ import {
 
 const Navbar = () => {
     const [nav, setNav] = useState(false);
-
-    const changeBackground = () => {
-        if (window.scrollY >= 50) {
-            setNav(true);
-        } else {
-            setNav(false);
-        };
-    };
-
+    const changeBackground = () => window.scrollY >= 50 ? setNav(true) : setNav(false);
     window.addEventListener('scroll', changeBackground);
 
     return (
