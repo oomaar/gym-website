@@ -7,7 +7,7 @@ import {
 
 const About = () => {
     return (
-        <Container>
+        <Container id="about">
             <ImageContainer>
                 <img src="/images/about.png" alt="about"/>
             </ImageContainer>
